@@ -21,8 +21,10 @@ result
 end
 
 def printer (badges)
-  batch_badge_creator(badges).each do |badges|
-  puts assign_rooms
-  puts badges_and_room_assignments
-end
+  batch_badge_creator(badges).each do |id|
+  puts id 
+  end
+  assign_rooms(badges).each do |id|
+  puts id
+  end
 end
